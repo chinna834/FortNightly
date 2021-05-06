@@ -8,13 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		93436FD32644417B0061C8F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93436FD22644417B0061C8F5 /* AppDelegate.swift */; };
-		93436FD52644417B0061C8F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93436FD42644417B0061C8F5 /* SceneDelegate.swift */; };
-		93436FD72644417B0061C8F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93436FD62644417B0061C8F5 /* ViewController.swift */; };
 		93436FDA2644417B0061C8F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93436FD82644417B0061C8F5 /* Main.storyboard */; };
 		93436FDC2644417D0061C8F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93436FDB2644417D0061C8F5 /* Assets.xcassets */; };
 		93436FDF2644417D0061C8F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93436FDD2644417D0061C8F5 /* LaunchScreen.storyboard */; };
 		93436FEA2644417D0061C8F5 /* FortNightlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93436FE92644417D0061C8F5 /* FortNightlyTests.swift */; };
 		93436FF52644417D0061C8F5 /* FortNightlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93436FF42644417D0061C8F5 /* FortNightlyUITests.swift */; };
+		93437012264447670061C8F5 /* Merriweather-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9343700A264447660061C8F5 /* Merriweather-Light.ttf */; };
+		93437013264447670061C8F5 /* Merriweather-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9343700B264447660061C8F5 /* Merriweather-BlackItalic.ttf */; };
+		93437014264447670061C8F5 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9343700C264447660061C8F5 /* Merriweather-Regular.ttf */; };
+		93437015264447670061C8F5 /* Merriweather-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9343700D264447670061C8F5 /* Merriweather-LightItalic.ttf */; };
+		93437016264447670061C8F5 /* Merriweather-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9343700E264447670061C8F5 /* Merriweather-Italic.ttf */; };
+		93437017264447670061C8F5 /* Merriweather-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9343700F264447670061C8F5 /* Merriweather-Bold.ttf */; };
+		93437018264447670061C8F5 /* Merriweather-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93437010264447670061C8F5 /* Merriweather-Black.ttf */; };
+		93437019264447670061C8F5 /* Merriweather-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93437011264447670061C8F5 /* Merriweather-BoldItalic.ttf */; };
+		93437032264447AA0061C8F5 /* LibreFranklin-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93437030264447AA0061C8F5 /* LibreFranklin-Italic-VariableFont_wght.ttf */; };
+		93437033264447AA0061C8F5 /* LibreFranklin-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93437031264447AA0061C8F5 /* LibreFranklin-VariableFont_wght.ttf */; };
+		93437037264447AD0061C8F5 /* LibreFranklin-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 934370242644479A0061C8F5 /* LibreFranklin-Black.ttf */; };
+		9343703B264447B60061C8F5 /* LibreFranklin-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 934370292644479A0061C8F5 /* LibreFranklin-ExtraLight.ttf */; };
+		9343703C264447B60061C8F5 /* LibreFranklin-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 934370262644479A0061C8F5 /* LibreFranklin-ThinItalic.ttf */; };
+		9343703D264447B60061C8F5 /* LibreFranklin-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9343701E264447990061C8F5 /* LibreFranklin-Italic.ttf */; };
+		9343703E264447B60061C8F5 /* LibreFranklin-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9343702D2644479A0061C8F5 /* LibreFranklin-Light.ttf */; };
+		9343703F264447B60061C8F5 /* LibreFranklin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 934370222644479A0061C8F5 /* LibreFranklin-Medium.ttf */; };
+		93437040264447B60061C8F5 /* LibreFranklin-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9343702B2644479A0061C8F5 /* LibreFranklin-ExtraLightItalic.ttf */; };
+		93437041264447B60061C8F5 /* LibreFranklin-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9343702F2644479A0061C8F5 /* LibreFranklin-ExtraBold.ttf */; };
+		93437042264447B60061C8F5 /* LibreFranklin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 934370282644479A0061C8F5 /* LibreFranklin-Bold.ttf */; };
+		93437043264447B60061C8F5 /* LibreFranklin-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 934370232644479A0061C8F5 /* LibreFranklin-MediumItalic.ttf */; };
+		93437044264447B60061C8F5 /* LibreFranklin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 934370212644479A0061C8F5 /* LibreFranklin-SemiBold.ttf */; };
+		93437045264447B60061C8F5 /* LibreFranklin-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9343702C2644479A0061C8F5 /* LibreFranklin-ExtraBoldItalic.ttf */; };
+		93437046264447B60061C8F5 /* LibreFranklin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9343702A2644479A0061C8F5 /* LibreFranklin-Regular.ttf */; };
+		93437047264447B60061C8F5 /* LibreFranklin-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9343701F264447990061C8F5 /* LibreFranklin-BlackItalic.ttf */; };
+		93437048264447B60061C8F5 /* LibreFranklin-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 934370252644479A0061C8F5 /* LibreFranklin-Thin.ttf */; };
+		93437049264447B60061C8F5 /* LibreFranklin-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 934370272644479A0061C8F5 /* LibreFranklin-SemiBoldItalic.ttf */; };
+		9343704A264447B60061C8F5 /* LibreFranklin-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 934370202644479A0061C8F5 /* LibreFranklin-LightItalic.ttf */; };
+		9343704B264447B60061C8F5 /* LibreFranklin-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9343702E2644479A0061C8F5 /* LibreFranklin-BoldItalic.ttf */; };
+		93437060264448A20061C8F5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343705F264448A20061C8F5 /* NetworkManager.swift */; };
+		93437065264448CE0061C8F5 /* FNError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93437064264448CE0061C8F5 /* FNError.swift */; };
+		9343706A264448F60061C8F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93437069264448F60061C8F5 /* Constants.swift */; };
+		9343706F2644491E0061C8F5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343706E2644491E0061C8F5 /* Utilities.swift */; };
+		9343707926444D9E0061C8F5 /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343707826444D9E0061C8F5 /* ArticlesViewController.swift */; };
+		9343707E2644507E0061C8F5 /* ServerKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343707D2644507E0061C8F5 /* ServerKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +69,6 @@
 /* Begin PBXFileReference section */
 		93436FCF2644417B0061C8F5 /* FortNightly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortNightly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93436FD22644417B0061C8F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93436FD42644417B0061C8F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93436FD62644417B0061C8F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93436FD92644417B0061C8F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93436FDB2644417D0061C8F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93436FDE2644417D0061C8F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +79,40 @@
 		93436FF02644417D0061C8F5 /* FortNightlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortNightlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93436FF42644417D0061C8F5 /* FortNightlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortNightlyUITests.swift; sourceTree = "<group>"; };
 		93436FF62644417D0061C8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9343700A264447660061C8F5 /* Merriweather-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Light.ttf"; sourceTree = "<group>"; };
+		9343700B264447660061C8F5 /* Merriweather-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BlackItalic.ttf"; sourceTree = "<group>"; };
+		9343700C264447660061C8F5 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
+		9343700D264447670061C8F5 /* Merriweather-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-LightItalic.ttf"; sourceTree = "<group>"; };
+		9343700E264447670061C8F5 /* Merriweather-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Italic.ttf"; sourceTree = "<group>"; };
+		9343700F264447670061C8F5 /* Merriweather-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.ttf"; sourceTree = "<group>"; };
+		93437010264447670061C8F5 /* Merriweather-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Black.ttf"; sourceTree = "<group>"; };
+		93437011264447670061C8F5 /* Merriweather-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BoldItalic.ttf"; sourceTree = "<group>"; };
+		9343701E264447990061C8F5 /* LibreFranklin-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Italic.ttf"; sourceTree = "<group>"; };
+		9343701F264447990061C8F5 /* LibreFranklin-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-BlackItalic.ttf"; sourceTree = "<group>"; };
+		934370202644479A0061C8F5 /* LibreFranklin-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-LightItalic.ttf"; sourceTree = "<group>"; };
+		934370212644479A0061C8F5 /* LibreFranklin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-SemiBold.ttf"; sourceTree = "<group>"; };
+		934370222644479A0061C8F5 /* LibreFranklin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Medium.ttf"; sourceTree = "<group>"; };
+		934370232644479A0061C8F5 /* LibreFranklin-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-MediumItalic.ttf"; sourceTree = "<group>"; };
+		934370242644479A0061C8F5 /* LibreFranklin-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Black.ttf"; sourceTree = "<group>"; };
+		934370252644479A0061C8F5 /* LibreFranklin-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Thin.ttf"; sourceTree = "<group>"; };
+		934370262644479A0061C8F5 /* LibreFranklin-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-ThinItalic.ttf"; sourceTree = "<group>"; };
+		934370272644479A0061C8F5 /* LibreFranklin-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		934370282644479A0061C8F5 /* LibreFranklin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Bold.ttf"; sourceTree = "<group>"; };
+		934370292644479A0061C8F5 /* LibreFranklin-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-ExtraLight.ttf"; sourceTree = "<group>"; };
+		9343702A2644479A0061C8F5 /* LibreFranklin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Regular.ttf"; sourceTree = "<group>"; };
+		9343702B2644479A0061C8F5 /* LibreFranklin-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		9343702C2644479A0061C8F5 /* LibreFranklin-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		9343702D2644479A0061C8F5 /* LibreFranklin-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Light.ttf"; sourceTree = "<group>"; };
+		9343702E2644479A0061C8F5 /* LibreFranklin-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-BoldItalic.ttf"; sourceTree = "<group>"; };
+		9343702F2644479A0061C8F5 /* LibreFranklin-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-ExtraBold.ttf"; sourceTree = "<group>"; };
+		93437030264447AA0061C8F5 /* LibreFranklin-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		93437031264447AA0061C8F5 /* LibreFranklin-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		9343705F264448A20061C8F5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		93437064264448CE0061C8F5 /* FNError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNError.swift; sourceTree = "<group>"; };
+		93437069264448F60061C8F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9343706E2644491E0061C8F5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		9343707826444D9E0061C8F5 /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+		9343707D2644507E0061C8F5 /* ServerKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +164,14 @@
 			isa = PBXGroup;
 			children = (
 				93436FD22644417B0061C8F5 /* AppDelegate.swift */,
-				93436FD42644417B0061C8F5 /* SceneDelegate.swift */,
-				93436FD62644417B0061C8F5 /* ViewController.swift */,
+				9343705E264448900061C8F5 /* Utilities */,
+				9343707326444D5D0061C8F5 /* ArticlesModule */,
+				9343707426444D750061C8F5 /* ArticleDetailModule */,
 				93436FD82644417B0061C8F5 /* Main.storyboard */,
 				93436FDB2644417D0061C8F5 /* Assets.xcassets */,
 				93436FDD2644417D0061C8F5 /* LaunchScreen.storyboard */,
 				93436FE02644417D0061C8F5 /* Info.plist */,
+				934370082644472F0061C8F5 /* Fonts */,
 			);
 			path = FortNightly;
 			sourceTree = "<group>";
@@ -126,6 +192,84 @@
 				93436FF62644417D0061C8F5 /* Info.plist */,
 			);
 			path = FortNightlyUITests;
+			sourceTree = "<group>";
+		};
+		934370082644472F0061C8F5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9343701D264447740061C8F5 /* LibreFranklin */,
+				93437009264447490061C8F5 /* MerriWeather */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		93437009264447490061C8F5 /* MerriWeather */ = {
+			isa = PBXGroup;
+			children = (
+				93437010264447670061C8F5 /* Merriweather-Black.ttf */,
+				9343700B264447660061C8F5 /* Merriweather-BlackItalic.ttf */,
+				9343700F264447670061C8F5 /* Merriweather-Bold.ttf */,
+				93437011264447670061C8F5 /* Merriweather-BoldItalic.ttf */,
+				9343700E264447670061C8F5 /* Merriweather-Italic.ttf */,
+				9343700A264447660061C8F5 /* Merriweather-Light.ttf */,
+				9343700D264447670061C8F5 /* Merriweather-LightItalic.ttf */,
+				9343700C264447660061C8F5 /* Merriweather-Regular.ttf */,
+			);
+			path = MerriWeather;
+			sourceTree = "<group>";
+		};
+		9343701D264447740061C8F5 /* LibreFranklin */ = {
+			isa = PBXGroup;
+			children = (
+				934370242644479A0061C8F5 /* LibreFranklin-Black.ttf */,
+				9343701F264447990061C8F5 /* LibreFranklin-BlackItalic.ttf */,
+				934370282644479A0061C8F5 /* LibreFranklin-Bold.ttf */,
+				9343702E2644479A0061C8F5 /* LibreFranklin-BoldItalic.ttf */,
+				9343702F2644479A0061C8F5 /* LibreFranklin-ExtraBold.ttf */,
+				9343702C2644479A0061C8F5 /* LibreFranklin-ExtraBoldItalic.ttf */,
+				934370292644479A0061C8F5 /* LibreFranklin-ExtraLight.ttf */,
+				9343702B2644479A0061C8F5 /* LibreFranklin-ExtraLightItalic.ttf */,
+				9343701E264447990061C8F5 /* LibreFranklin-Italic.ttf */,
+				9343702D2644479A0061C8F5 /* LibreFranklin-Light.ttf */,
+				934370202644479A0061C8F5 /* LibreFranklin-LightItalic.ttf */,
+				934370222644479A0061C8F5 /* LibreFranklin-Medium.ttf */,
+				934370232644479A0061C8F5 /* LibreFranklin-MediumItalic.ttf */,
+				9343702A2644479A0061C8F5 /* LibreFranklin-Regular.ttf */,
+				934370212644479A0061C8F5 /* LibreFranklin-SemiBold.ttf */,
+				934370272644479A0061C8F5 /* LibreFranklin-SemiBoldItalic.ttf */,
+				934370252644479A0061C8F5 /* LibreFranklin-Thin.ttf */,
+				934370262644479A0061C8F5 /* LibreFranklin-ThinItalic.ttf */,
+				93437030264447AA0061C8F5 /* LibreFranklin-Italic-VariableFont_wght.ttf */,
+				93437031264447AA0061C8F5 /* LibreFranklin-VariableFont_wght.ttf */,
+			);
+			path = LibreFranklin;
+			sourceTree = "<group>";
+		};
+		9343705E264448900061C8F5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9343705F264448A20061C8F5 /* NetworkManager.swift */,
+				93437064264448CE0061C8F5 /* FNError.swift */,
+				93437069264448F60061C8F5 /* Constants.swift */,
+				9343706E2644491E0061C8F5 /* Utilities.swift */,
+				9343707D2644507E0061C8F5 /* ServerKeys.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9343707326444D5D0061C8F5 /* ArticlesModule */ = {
+			isa = PBXGroup;
+			children = (
+				9343707826444D9E0061C8F5 /* ArticlesViewController.swift */,
+			);
+			path = ArticlesModule;
+			sourceTree = "<group>";
+		};
+		9343707426444D750061C8F5 /* ArticleDetailModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ArticleDetailModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +376,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				93436FDF2644417D0061C8F5 /* LaunchScreen.storyboard in Resources */,
+				93437048264447B60061C8F5 /* LibreFranklin-Thin.ttf in Resources */,
+				93437042264447B60061C8F5 /* LibreFranklin-Bold.ttf in Resources */,
+				9343703C264447B60061C8F5 /* LibreFranklin-ThinItalic.ttf in Resources */,
+				9343704B264447B60061C8F5 /* LibreFranklin-BoldItalic.ttf in Resources */,
+				9343703D264447B60061C8F5 /* LibreFranklin-Italic.ttf in Resources */,
+				93437045264447B60061C8F5 /* LibreFranklin-ExtraBoldItalic.ttf in Resources */,
+				93437018264447670061C8F5 /* Merriweather-Black.ttf in Resources */,
+				93437044264447B60061C8F5 /* LibreFranklin-SemiBold.ttf in Resources */,
+				93437015264447670061C8F5 /* Merriweather-LightItalic.ttf in Resources */,
+				9343703B264447B60061C8F5 /* LibreFranklin-ExtraLight.ttf in Resources */,
+				93437013264447670061C8F5 /* Merriweather-BlackItalic.ttf in Resources */,
+				93437033264447AA0061C8F5 /* LibreFranklin-VariableFont_wght.ttf in Resources */,
 				93436FDC2644417D0061C8F5 /* Assets.xcassets in Resources */,
+				93437012264447670061C8F5 /* Merriweather-Light.ttf in Resources */,
+				93437041264447B60061C8F5 /* LibreFranklin-ExtraBold.ttf in Resources */,
+				9343704A264447B60061C8F5 /* LibreFranklin-LightItalic.ttf in Resources */,
+				9343703F264447B60061C8F5 /* LibreFranklin-Medium.ttf in Resources */,
+				93437016264447670061C8F5 /* Merriweather-Italic.ttf in Resources */,
+				93437037264447AD0061C8F5 /* LibreFranklin-Black.ttf in Resources */,
+				93437032264447AA0061C8F5 /* LibreFranklin-Italic-VariableFont_wght.ttf in Resources */,
+				93437019264447670061C8F5 /* Merriweather-BoldItalic.ttf in Resources */,
+				93437049264447B60061C8F5 /* LibreFranklin-SemiBoldItalic.ttf in Resources */,
+				93437046264447B60061C8F5 /* LibreFranklin-Regular.ttf in Resources */,
+				93437047264447B60061C8F5 /* LibreFranklin-BlackItalic.ttf in Resources */,
+				93437017264447670061C8F5 /* Merriweather-Bold.ttf in Resources */,
+				93437040264447B60061C8F5 /* LibreFranklin-ExtraLightItalic.ttf in Resources */,
+				9343703E264447B60061C8F5 /* LibreFranklin-Light.ttf in Resources */,
+				93437014264447670061C8F5 /* Merriweather-Regular.ttf in Resources */,
+				93437043264447B60061C8F5 /* LibreFranklin-MediumItalic.ttf in Resources */,
 				93436FDA2644417B0061C8F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +430,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93436FD72644417B0061C8F5 /* ViewController.swift in Sources */,
+				9343706F2644491E0061C8F5 /* Utilities.swift in Sources */,
+				9343706A264448F60061C8F5 /* Constants.swift in Sources */,
+				9343707E2644507E0061C8F5 /* ServerKeys.swift in Sources */,
+				93437060264448A20061C8F5 /* NetworkManager.swift in Sources */,
+				9343707926444D9E0061C8F5 /* ArticlesViewController.swift in Sources */,
+				93437065264448CE0061C8F5 /* FNError.swift in Sources */,
 				93436FD32644417B0061C8F5 /* AppDelegate.swift in Sources */,
-				93436FD52644417B0061C8F5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +542,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +597,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -445,7 +621,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = chinna.FortNightly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -463,7 +639,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = chinna.FortNightly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
