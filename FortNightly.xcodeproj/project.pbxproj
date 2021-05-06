@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93436FD32644417B0061C8F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93436FD22644417B0061C8F5 /* AppDelegate.swift */; };
+		93436FD52644417B0061C8F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93436FD42644417B0061C8F5 /* SceneDelegate.swift */; };
+		93436FD72644417B0061C8F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93436FD62644417B0061C8F5 /* ViewController.swift */; };
+		93436FDA2644417B0061C8F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93436FD82644417B0061C8F5 /* Main.storyboard */; };
+		93436FDC2644417D0061C8F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93436FDB2644417D0061C8F5 /* Assets.xcassets */; };
+		93436FDF2644417D0061C8F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93436FDD2644417D0061C8F5 /* LaunchScreen.storyboard */; };
+		93436FEA2644417D0061C8F5 /* FortNightlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93436FE92644417D0061C8F5 /* FortNightlyTests.swift */; };
+		93436FF52644417D0061C8F5 /* FortNightlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93436FF42644417D0061C8F5 /* FortNightlyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93436FE62644417D0061C8F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93436FC72644417B0061C8F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93436FCE2644417B0061C8F5;
+			remoteInfo = FortNightly;
+		};
+		93436FF12644417D0061C8F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93436FC72644417B0061C8F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93436FCE2644417B0061C8F5;
+			remoteInfo = FortNightly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		93436FCF2644417B0061C8F5 /* FortNightly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortNightly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93436FD22644417B0061C8F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93436FD42644417B0061C8F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		93436FD62644417B0061C8F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93436FD92644417B0061C8F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93436FDB2644417D0061C8F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93436FDE2644417D0061C8F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93436FE02644417D0061C8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93436FE52644417D0061C8F5 /* FortNightlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortNightlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93436FE92644417D0061C8F5 /* FortNightlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortNightlyTests.swift; sourceTree = "<group>"; };
+		93436FEB2644417D0061C8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93436FF02644417D0061C8F5 /* FortNightlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortNightlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93436FF42644417D0061C8F5 /* FortNightlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortNightlyUITests.swift; sourceTree = "<group>"; };
+		93436FF62644417D0061C8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93436FCC2644417B0061C8F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93436FE22644417D0061C8F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93436FED2644417D0061C8F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93436FC62644417B0061C8F5 = {
+			isa = PBXGroup;
+			children = (
+				93436FD12644417B0061C8F5 /* FortNightly */,
+				93436FE82644417D0061C8F5 /* FortNightlyTests */,
+				93436FF32644417D0061C8F5 /* FortNightlyUITests */,
+				93436FD02644417B0061C8F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93436FD02644417B0061C8F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93436FCF2644417B0061C8F5 /* FortNightly.app */,
+				93436FE52644417D0061C8F5 /* FortNightlyTests.xctest */,
+				93436FF02644417D0061C8F5 /* FortNightlyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93436FD12644417B0061C8F5 /* FortNightly */ = {
+			isa = PBXGroup;
+			children = (
+				93436FD22644417B0061C8F5 /* AppDelegate.swift */,
+				93436FD42644417B0061C8F5 /* SceneDelegate.swift */,
+				93436FD62644417B0061C8F5 /* ViewController.swift */,
+				93436FD82644417B0061C8F5 /* Main.storyboard */,
+				93436FDB2644417D0061C8F5 /* Assets.xcassets */,
+				93436FDD2644417D0061C8F5 /* LaunchScreen.storyboard */,
+				93436FE02644417D0061C8F5 /* Info.plist */,
+			);
+			path = FortNightly;
+			sourceTree = "<group>";
+		};
+		93436FE82644417D0061C8F5 /* FortNightlyTests */ = {
+			isa = PBXGroup;
+			children = (
+				93436FE92644417D0061C8F5 /* FortNightlyTests.swift */,
+				93436FEB2644417D0061C8F5 /* Info.plist */,
+			);
+			path = FortNightlyTests;
+			sourceTree = "<group>";
+		};
+		93436FF32644417D0061C8F5 /* FortNightlyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93436FF42644417D0061C8F5 /* FortNightlyUITests.swift */,
+				93436FF62644417D0061C8F5 /* Info.plist */,
+			);
+			path = FortNightlyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93436FCE2644417B0061C8F5 /* FortNightly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93436FF92644417D0061C8F5 /* Build configuration list for PBXNativeTarget "FortNightly" */;
+			buildPhases = (
+				93436FCB2644417B0061C8F5 /* Sources */,
+				93436FCC2644417B0061C8F5 /* Frameworks */,
+				93436FCD2644417B0061C8F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FortNightly;
+			productName = FortNightly;
+			productReference = 93436FCF2644417B0061C8F5 /* FortNightly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93436FE42644417D0061C8F5 /* FortNightlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93436FFC2644417D0061C8F5 /* Build configuration list for PBXNativeTarget "FortNightlyTests" */;
+			buildPhases = (
+				93436FE12644417D0061C8F5 /* Sources */,
+				93436FE22644417D0061C8F5 /* Frameworks */,
+				93436FE32644417D0061C8F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93436FE72644417D0061C8F5 /* PBXTargetDependency */,
+			);
+			name = FortNightlyTests;
+			productName = FortNightlyTests;
+			productReference = 93436FE52644417D0061C8F5 /* FortNightlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93436FEF2644417D0061C8F5 /* FortNightlyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93436FFF2644417D0061C8F5 /* Build configuration list for PBXNativeTarget "FortNightlyUITests" */;
+			buildPhases = (
+				93436FEC2644417D0061C8F5 /* Sources */,
+				93436FED2644417D0061C8F5 /* Frameworks */,
+				93436FEE2644417D0061C8F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93436FF22644417D0061C8F5 /* PBXTargetDependency */,
+			);
+			name = FortNightlyUITests;
+			productName = FortNightlyUITests;
+			productReference = 93436FF02644417D0061C8F5 /* FortNightlyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93436FC72644417B0061C8F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					93436FCE2644417B0061C8F5 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					93436FE42644417D0061C8F5 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 93436FCE2644417B0061C8F5;
+					};
+					93436FEF2644417D0061C8F5 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 93436FCE2644417B0061C8F5;
+					};
+				};
+			};
+			buildConfigurationList = 93436FCA2644417B0061C8F5 /* Build configuration list for PBXProject "FortNightly" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93436FC62644417B0061C8F5;
+			productRefGroup = 93436FD02644417B0061C8F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93436FCE2644417B0061C8F5 /* FortNightly */,
+				93436FE42644417D0061C8F5 /* FortNightlyTests */,
+				93436FEF2644417D0061C8F5 /* FortNightlyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93436FCD2644417B0061C8F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93436FDF2644417D0061C8F5 /* LaunchScreen.storyboard in Resources */,
+				93436FDC2644417D0061C8F5 /* Assets.xcassets in Resources */,
+				93436FDA2644417B0061C8F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93436FE32644417D0061C8F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93436FEE2644417D0061C8F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93436FCB2644417B0061C8F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93436FD72644417B0061C8F5 /* ViewController.swift in Sources */,
+				93436FD32644417B0061C8F5 /* AppDelegate.swift in Sources */,
+				93436FD52644417B0061C8F5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93436FE12644417D0061C8F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93436FEA2644417D0061C8F5 /* FortNightlyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93436FEC2644417D0061C8F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93436FF52644417D0061C8F5 /* FortNightlyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93436FE72644417D0061C8F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93436FCE2644417B0061C8F5 /* FortNightly */;
+			targetProxy = 93436FE62644417D0061C8F5 /* PBXContainerItemProxy */;
+		};
+		93436FF22644417D0061C8F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93436FCE2644417B0061C8F5 /* FortNightly */;
+			targetProxy = 93436FF12644417D0061C8F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93436FD82644417B0061C8F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93436FD92644417B0061C8F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93436FDD2644417D0061C8F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93436FDE2644417D0061C8F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93436FF72644417D0061C8F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93436FF82644417D0061C8F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93436FFA2644417D0061C8F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FortNightly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chinna.FortNightly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93436FFB2644417D0061C8F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FortNightly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chinna.FortNightly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		93436FFD2644417D0061C8F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FortNightlyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chinna.FortNightlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FortNightly.app/FortNightly";
+			};
+			name = Debug;
+		};
+		93436FFE2644417D0061C8F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FortNightlyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chinna.FortNightlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FortNightly.app/FortNightly";
+			};
+			name = Release;
+		};
+		934370002644417D0061C8F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FortNightlyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chinna.FortNightlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FortNightly;
+			};
+			name = Debug;
+		};
+		934370012644417D0061C8F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FortNightlyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chinna.FortNightlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FortNightly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93436FCA2644417B0061C8F5 /* Build configuration list for PBXProject "FortNightly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93436FF72644417D0061C8F5 /* Debug */,
+				93436FF82644417D0061C8F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93436FF92644417D0061C8F5 /* Build configuration list for PBXNativeTarget "FortNightly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93436FFA2644417D0061C8F5 /* Debug */,
+				93436FFB2644417D0061C8F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93436FFC2644417D0061C8F5 /* Build configuration list for PBXNativeTarget "FortNightlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93436FFD2644417D0061C8F5 /* Debug */,
+				93436FFE2644417D0061C8F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93436FFF2644417D0061C8F5 /* Build configuration list for PBXNativeTarget "FortNightlyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934370002644417D0061C8F5 /* Debug */,
+				934370012644417D0061C8F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93436FC72644417B0061C8F5 /* Project object */;
+}
