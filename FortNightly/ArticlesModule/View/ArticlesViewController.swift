@@ -7,8 +7,8 @@
 
 import UIKit
 
-class ArticlesViewController: UIViewController {
-    
+class ArticlesViewController: UIViewController, FNCustomNavigation {
+        
     var presenter: ArticlesViewToPresenterProtocol?
     var newsArticles = [Article]()
     
@@ -21,6 +21,7 @@ class ArticlesViewController: UIViewController {
         newsArticlesTableView.dataSource = self
         newsArticlesTableView.delegate = self
         newsArticlesTableView.estimatedRowHeight = 150
+        newsArticlesTableView.estimatedSectionHeaderHeight = Constants.kHeaderViewHeight
         newsArticlesTableView.rowHeight = UITableView.automaticDimension
         
         view.addSubview(newsArticlesTableView)
@@ -43,7 +44,7 @@ class ArticlesViewController: UIViewController {
 
         //Configure Navigation
         title = "Front Page"
-//        navigationController?.navigationBar.prefersLargeTitles = true
+        configureNavigationBarWithTextAttributes(title: "Front Page")
         
         //Configure Table View
         createSongsTableView()
@@ -112,5 +113,27 @@ extension ArticlesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UITableViewHeaderFooterView()
+    }
+}
+
+/**
+ Determing the Scroll and Update the Navigation title Accordingly
+ */
+extension ArticlesViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        var offset: CGFloat = 0.0
+        
+        let targetHeight = Constants.kHeaderViewHeight + 64 //Overall Navigation Bar Height and Header View Height
+        offset = scrollView.contentOffset.y / CGFloat(targetHeight)
+
+        if offset > 1 {offset = 1}
+        
+        if offset > 0.5 {
+            title = ""
+            configureNavigationBarWithBrandedImage()
+        } else {
+            configureNavigationBarWithTextAttributes(title: "Front Page")
+        }
     }
 }

@@ -4,6 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>LibreFranklin-Medium.ttf</string>
+		<string>LibreFranklin-Regular.ttf</string>
 		<string>Merriweather-Light.ttf</string>
 		<string>Merriweather-Regular.ttf</string>
 		<string>Merriweather-Bold.ttf</string>

@@ -30,6 +30,7 @@ struct GetNewsArticlesRequest: RequestObject {
         url = URL(string: host + path)        
     }
     
+    //Additional APIs can also be implemented
     
 }
 

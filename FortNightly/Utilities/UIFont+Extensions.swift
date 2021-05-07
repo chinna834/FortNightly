@@ -11,11 +11,11 @@ import UIKit
 extension UIFont {
     
     static func getRegularFont() -> UIFont {
-        return UIFont(name: "Merriweather-Regular", size: 15.0) ?? UIFont.systemFont(ofSize: 17)
+        return UIFont(name: "LibreFranklin-Medium", size: 15.0) ?? UIFont.systemFont(ofSize: 17)
     }
     
     static func getBoldFont() -> UIFont {
-        return UIFont(name: "Merriweather-Bold", size: 17.0) ?? UIFont.systemFont(ofSize: 17, weight: .bold)
+        return UIFont(name: "Merriweather-Bold", size: 20.0) ?? UIFont.systemFont(ofSize: 17, weight: .bold)
     }
     
     static func getLightFont() -> UIFont {

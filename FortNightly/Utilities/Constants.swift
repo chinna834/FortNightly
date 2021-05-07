@@ -20,11 +20,11 @@ struct Constants {
     static let screenWidth = UIScreen.main.bounds.size.width
     static let screenHeight = UIScreen.main.bounds.size.height
     
+    //Article Header View Height
+    static let kHeaderViewHeight: CGFloat = 275.0
+    
     //Storyboard
     static let storyboard_main = "Main"
-    
-    //ViewController Identifiers
-    
     
     //Common
     static let commonError = "Something went wrong. Please try again."

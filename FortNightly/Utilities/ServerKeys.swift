@@ -12,7 +12,8 @@ struct ServerKeys {
     //Base URL and common keys
     static let baseNewsAPIURL = "https://newsapi.org/"
     static let versionPath = "v2/"
-    static let newsAPIKey = "f71af7261c434b5d8be60816ed910d8b"
+    static let newsAPIKey = "cd572d30145d4957b39da7a689f39c26"
+//    static let newsAPIKey = "f71af7261c434b5d8be60816ed910d8b" // -> Align Technology provided Key
     
     //Sorted keys
     static let sortByPopularityKey = "popularity"
