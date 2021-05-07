@@ -57,6 +57,7 @@
 		934370B726448AF40061C8F5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934370B626448AF40061C8F5 /* UIImageView+Extensions.swift */; };
 		934370BC2644C7940061C8F5 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934370BB2644C7940061C8F5 /* ArticleTableViewCell.swift */; };
 		934370C42644D2380061C8F5 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934370C32644D2380061C8F5 /* UIFont+Extensions.swift */; };
+		934370C92644E0D40061C8F5 /* ArticleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934370C82644E0D40061C8F5 /* ArticleHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		934370B626448AF40061C8F5 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		934370BB2644C7940061C8F5 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		934370C32644D2380061C8F5 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		934370C82644E0D40061C8F5 /* ArticleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +307,7 @@
 			children = (
 				9343707826444D9E0061C8F5 /* ArticlesViewController.swift */,
 				934370BB2644C7940061C8F5 /* ArticleTableViewCell.swift */,
+				934370C82644E0D40061C8F5 /* ArticleHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 				9343708E264459110061C8F5 /* ArticlesViewInteractor.swift in Sources */,
 				934370BC2644C7940061C8F5 /* ArticleTableViewCell.swift in Sources */,
 				9343707926444D9E0061C8F5 /* ArticlesViewController.swift in Sources */,
+				934370C92644E0D40061C8F5 /* ArticleHeaderView.swift in Sources */,
 				934370C42644D2380061C8F5 /* UIFont+Extensions.swift in Sources */,
 				93437065264448CE0061C8F5 /* FNError.swift in Sources */,
 				93436FD32644417B0061C8F5 /* AppDelegate.swift in Sources */,

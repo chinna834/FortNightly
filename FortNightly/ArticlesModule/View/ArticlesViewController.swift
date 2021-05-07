@@ -12,11 +12,12 @@ class ArticlesViewController: UIViewController {
     var presenter: ArticlesViewToPresenterProtocol?
     var newsArticles = [Article]()
     
-    var newsArticlesTableView: UITableView = UITableView(frame: CGRect.zero)
+    var newsArticlesTableView: UITableView = UITableView(frame: CGRect.zero, style: .grouped)
     
     private func createSongsTableView() {
         newsArticlesTableView.translatesAutoresizingMaskIntoConstraints = false
         newsArticlesTableView.register(ArticleTableViewCell.self, forCellReuseIdentifier: kNewsArticleCellIdentifier)
+        newsArticlesTableView.register(ArticleHeaderView.self, forHeaderFooterViewReuseIdentifier: kArticleHeaderView)
         newsArticlesTableView.dataSource = self
         newsArticlesTableView.delegate = self
         newsArticlesTableView.estimatedRowHeight = 150
@@ -42,7 +43,7 @@ class ArticlesViewController: UIViewController {
 
         //Configure Navigation
         title = "Front Page"
-        navigationController?.navigationBar.prefersLargeTitles = true
+//        navigationController?.navigationBar.prefersLargeTitles = true
         
         //Configure Table View
         createSongsTableView()
@@ -82,11 +83,23 @@ extension ArticlesViewController: UITableViewDataSource, UITableViewDelegate {
               let article = newsArticles[safe: indexPath.row]
               else { return UITableViewCell() }
         
-        cell.accessoryType = .disclosureIndicator
         cell.selectionStyle = .none
         
         cell.configureCell(with: article)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: kArticleHeaderView) as? ArticleHeaderView
+        let firstIndexpath = IndexPath(row: 0, section: section)
+        if let firstArticle = newsArticles[safe: firstIndexpath.row], let imageURL = firstArticle.urlToImage {
+            header?.configureArticleImage(with: imageURL)
+        }
+        return header
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
@@ -98,6 +111,6 @@ extension ArticlesViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return UILabel()
+        return UITableViewHeaderFooterView()
     }
 }

@@ -21,12 +21,17 @@ extension UIImageView {
     /**
      Returns the image if it is available in Cache or downloads the image and updates the cache. Cache key is identified by a URL and return the image
      */
-    func loadImage(from urlString: String) {
+    func loadImage(from urlString: String, isThumbnail: Bool = true) {
         guard let url = URL(string: urlString) else { return }
         image = UIImage(named: "EmptyPlaceholder")
         
         if let imageFromCache = imageCache.object(forKey: urlString as AnyObject), let articleImage = imageFromCache as? UIImage {
-            image = articleImage
+            if isThumbnail {
+                image = articleImage.scaleUIImageTo(size: CGSize(width: 75, height: 75))
+            }
+            else {
+                image = articleImage
+            }
             return
         }
         
@@ -34,10 +39,15 @@ extension UIImageView {
             guard let self = self else { return }
             switch result {
             case .success(let data):
-                guard let imageToCache = UIImage(data: data), let scaledImage = imageToCache.scaleUIImageTo(size: CGSize(width: 75, height: 75)) else { return }
-                imageCache.setObject(scaledImage, forKey: urlString as AnyObject)
+                guard let imageToCache = UIImage(data: data) else { return }
+                imageCache.setObject(imageToCache, forKey: urlString as AnyObject)
                 DispatchQueue.main.async() { [weak self] in
-                    self?.image = scaledImage
+                    if !isThumbnail {
+                        self?.image = imageToCache
+                    }
+                    else {
+                        self?.image = imageToCache.scaleUIImageTo(size: CGSize(width: 75, height: 75))
+                    }
                 }
             case .failure(_):
                 DispatchQueue.main.async { [weak self] in

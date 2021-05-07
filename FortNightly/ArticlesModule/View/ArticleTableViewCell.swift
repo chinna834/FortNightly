@@ -35,7 +35,7 @@ class ArticleTableViewCell: UITableViewCell {
             articleDescriptionLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 12),
             articleDescriptionLabel.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: 8),
             articleDescriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12),
-            articleImageView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: 12),
+            articleImageView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -12),
             articleImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
             articleImageView.widthAnchor.constraint(equalToConstant: 75),
             articleImageView.bottomAnchor.constraint(equalTo: articleDescriptionLabel.bottomAnchor, constant: 4)
