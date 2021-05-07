@@ -190,7 +190,6 @@
 				93436FD22644417B0061C8F5 /* AppDelegate.swift */,
 				9343705E264448900061C8F5 /* Utilities */,
 				9343707326444D5D0061C8F5 /* ArticlesModule */,
-				9343707426444D750061C8F5 /* ArticleDetailModule */,
 				93436FD82644417B0061C8F5 /* Main.storyboard */,
 				93436FDB2644417D0061C8F5 /* Assets.xcassets */,
 				93436FDD2644417D0061C8F5 /* LaunchScreen.storyboard */,
@@ -296,13 +295,6 @@
 				9343708B264457C80061C8F5 /* Configurator */,
 			);
 			path = ArticlesModule;
-			sourceTree = "<group>";
-		};
-		9343707426444D750061C8F5 /* ArticleDetailModule */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ArticleDetailModule;
 			sourceTree = "<group>";
 		};
 		934370832644579B0061C8F5 /* View */ = {
