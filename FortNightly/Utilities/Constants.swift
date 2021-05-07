@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum HTTPMethod: String {
     case post = "POST",
@@ -15,6 +16,9 @@ enum HTTPMethod: String {
 }
 
 struct Constants {
+    
+    static let screenWidth = UIScreen.main.bounds.size.width
+    static let screenHeight = UIScreen.main.bounds.size.height
     
     //Storyboard
     static let storyboard_main = "Main"

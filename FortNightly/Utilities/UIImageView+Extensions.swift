@@ -23,10 +23,10 @@ extension UIImageView {
      */
     func loadImage(from urlString: String) {
         guard let url = URL(string: urlString) else { return }
-        image = nil
+        image = UIImage(named: "EmptyPlaceholder")
         
-        if let imageFromCache = imageCache.object(forKey: urlString as AnyObject), let picsumImage = imageFromCache as? UIImage {
-            image = picsumImage
+        if let imageFromCache = imageCache.object(forKey: urlString as AnyObject), let articleImage = imageFromCache as? UIImage {
+            image = articleImage
             return
         }
         
@@ -34,10 +34,10 @@ extension UIImageView {
             guard let self = self else { return }
             switch result {
             case .success(let data):
-                guard let imageToCache = UIImage(data: data) else { return }
-                imageCache.setObject(imageToCache, forKey: urlString as AnyObject)
+                guard let imageToCache = UIImage(data: data), let scaledImage = imageToCache.scaleUIImageTo(size: CGSize(width: 75, height: 75)) else { return }
+                imageCache.setObject(scaledImage, forKey: urlString as AnyObject)
                 DispatchQueue.main.async() { [weak self] in
-                    self?.image = imageToCache
+                    self?.image = scaledImage
                 }
             case .failure(_):
                 DispatchQueue.main.async { [weak self] in
