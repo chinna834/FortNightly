@@ -64,6 +64,9 @@ class ArticlesViewDataSource: NSObject, UITableViewDataSource, UITableViewDelega
         return UITableViewHeaderFooterView()
     }
     
+    /**
+     Determine if the header is moved up and trigger the events to View controller
+     */
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let targetHeight = Constants.kHeaderViewHeight + 64 //Overall Navigation Bar Height and Header View Height
         offset = scrollView.contentOffset.y / CGFloat(targetHeight)

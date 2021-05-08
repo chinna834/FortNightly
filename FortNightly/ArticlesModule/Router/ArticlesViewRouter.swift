@@ -34,7 +34,7 @@ class ArticlesViewRouter: ArticlesPresenterToRouterProtocol {
     func showSelectedArticleNews(selectedArticle: Article, navigationController: UINavigationController) {
         let articleDetailViewController = ArticleDetailViewRouter.createArticleDetailModule()
         articleDetailViewController.selectedArticle = selectedArticle
-        articleDetailViewController.currentCategory = "US - Technology"
+        articleDetailViewController.currentCategory = "\(ServerKeys.country_us) - \(ServerKeys.technologyNewsCategoryKey)" //Need to pass this category based on the selection on UI
         navigationController.pushViewController(articleDetailViewController, animated: true)
     }
     

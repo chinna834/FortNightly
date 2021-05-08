@@ -16,12 +16,14 @@ class ArticlesViewController: UIViewController, FNCustomNavigation {
     @IBOutlet weak var loadingViewTitleLabel: UILabel!
     @IBOutlet weak var loadingViewStatusLabel: UILabel!
     
+    //Articles View Data Source
     lazy var datasource: ArticlesViewDataSource = {
         let datasource = ArticlesViewDataSource()
         datasource.delegate = self
         return datasource
     }()
     
+    //Create News Articles Table View
     lazy var newsArticlesTableView: UITableView = {
         let tableView = UITableView(frame: CGRect.zero, style: .grouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -35,6 +37,7 @@ class ArticlesViewController: UIViewController, FNCustomNavigation {
         return tableView
     }()
     
+    //MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -55,6 +58,7 @@ class ArticlesViewController: UIViewController, FNCustomNavigation {
         presenter?.loadNewsArticles(category: ServerKeys.businessNewsCategoryKey, country: ServerKeys.country_us)
     }
     
+    //MARK: - Hook Table View to View Controller
     private func addConstraintsToTableView() {
         NSLayoutConstraint.activate([
             newsArticlesTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
@@ -65,6 +69,7 @@ class ArticlesViewController: UIViewController, FNCustomNavigation {
     }
 }
 
+//MARK: - Display Articles on Table View
 extension ArticlesViewController: ArticlesPresenterToViewProtocol {
     func updateArticlesToView(articles: [Article]) {
         loadingView.isHidden = true
@@ -82,6 +87,7 @@ extension ArticlesViewController: ArticlesPresenterToViewProtocol {
     }
 }
 
+//MARK: - Data Source Events
 extension ArticlesViewController: ArticlesViewDataSourceToView {
     func didSelectedArticle(selectedArticle: Article) {
         guard let currentNavigationController = navigationController else { return }

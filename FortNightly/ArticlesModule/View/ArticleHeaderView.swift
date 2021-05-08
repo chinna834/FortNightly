@@ -19,7 +19,6 @@ class ArticleHeaderView: UITableViewHeaderFooterView {
     
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
-        
         configureHeaderView()
     }
     
@@ -27,10 +26,9 @@ class ArticleHeaderView: UITableViewHeaderFooterView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configureHeaderView() {
-        
+    //MARK: - Add Image View to Parent View
+    private func configureHeaderView() {
         contentView.addSubview(articleImageView)
-               
         NSLayoutConstraint.activate([
             articleImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             articleImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
@@ -41,6 +39,7 @@ class ArticleHeaderView: UITableViewHeaderFooterView {
         ])
     }
     
+    //MARK: - Display Image on Header View Asynchronously
     func configureArticleImage(with imageURL: String?) {
         if let imageURLPath = imageURL, let url = URL(string: imageURLPath) {
             let transformer = SDImageResizingTransformer(size: CGSize(width: Constants.screenWidth, height: Constants.kHeaderViewHeight), scaleMode: .fill)
