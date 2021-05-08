@@ -55,7 +55,7 @@ class ArticlesViewController: UIViewController, FNCustomNavigation {
         addConstraintsToTableView()
                     
         //Load News Articles by Category
-        presenter?.loadNewsArticles(category: ServerKeys.businessNewsCategoryKey, country: ServerKeys.country_us)
+        presenter?.loadNewsArticles(category: ServerKeys.technologyNewsCategoryKey, country: ServerKeys.country_us)
     }
     
     //MARK: - Hook Table View to View Controller

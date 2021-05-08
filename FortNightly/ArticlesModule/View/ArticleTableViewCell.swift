@@ -69,7 +69,7 @@ class ArticleTableViewCell: UITableViewCell {
         articleImageView.isHidden = false
         
         if let imageURL = article.urlToImage {
-            let transformer = SDImageResizingTransformer(size: CGSize(width: 75, height: 75), scaleMode: .fill)
+            let transformer = SDImageResizingTransformer(size: CGSize(width: 75, height: 75), scaleMode: .aspectFill)
             articleImageView.sd_setImage(with: URL(string: imageURL), placeholderImage: UIImage(named: "emptyThumbnail"), context: [SDWebImageContextOption.imageTransformer : transformer])
         }
         else {
