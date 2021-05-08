@@ -92,8 +92,8 @@ extension ArticlesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: kArticleHeaderView) as? ArticleHeaderView
         let firstIndexpath = IndexPath(row: 0, section: section)
-        if let firstArticle = newsArticles[safe: firstIndexpath.row], let imageURL = firstArticle.urlToImage {
-            header?.configureArticleImage(with: imageURL)
+        if let firstArticle = newsArticles[safe: firstIndexpath.row] {
+            header?.configureArticleImage(with: firstArticle.urlToImage)
         }
         return header
     }

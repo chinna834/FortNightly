@@ -41,7 +41,13 @@ class ArticleHeaderView: UITableViewHeaderFooterView {
         ])
     }
     
-    func configureArticleImage(with imageURL: String) {
-        articleImageView.loadImage(from: imageURL)
+    func configureArticleImage(with imageURL: String?) {
+        if let imageURLPath = imageURL, let url = URL(string: imageURLPath) {
+            let transformer = SDImageResizingTransformer(size: CGSize(width: Constants.screenWidth, height: Constants.kHeaderViewHeight), scaleMode: .fill)
+            articleImageView.sd_setImage(with: url, placeholderImage: UIImage(named: "emptyPlaceholder"), context: [SDWebImageContextOption.imageTransformer : transformer])
+        }
+        else {
+            articleImageView.image = UIImage(named: "emptyPlaceholder")
+        }
     }
 }

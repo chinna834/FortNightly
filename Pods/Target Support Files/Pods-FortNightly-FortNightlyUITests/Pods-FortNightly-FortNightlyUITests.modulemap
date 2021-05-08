@@ -1,0 +1,6 @@
+framework module Pods_FortNightly_FortNightlyUITests {
+  umbrella header "Pods-FortNightly-FortNightlyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

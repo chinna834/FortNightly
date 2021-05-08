@@ -63,7 +63,8 @@ class ArticleTableViewCell: UITableViewCell {
         dateLabel.text = "1H"
         articleDescriptionLabel.text = article.title ?? ""
         if let imageURL = article.urlToImage {
-            articleImageView.loadImage(from: imageURL)
+            let transformer = SDImageResizingTransformer(size: CGSize(width: 75, height: 75), scaleMode: .fill)
+            articleImageView.sd_setImage(with: URL(string: imageURL), placeholderImage: UIImage(named: "emptyThumbnail"), context: [SDWebImageContextOption.imageTransformer : transformer])
         }
         else {
             articleImageView.image = UIImage(named: "emptyThumbnail")

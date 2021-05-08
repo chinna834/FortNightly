@@ -48,8 +48,7 @@ class ArticleDetailViewController: UIViewController {
         view.backgroundColor = .white
         hookComponentsToView()
         
-        guard let imageURL = selectedArticle?.urlToImage else { return }
-        articleImageView.loadImage(from: imageURL)
+        loadArticleImage()
     }
 
     private func hookComponentsToView() {
@@ -61,5 +60,15 @@ class ArticleDetailViewController: UIViewController {
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[ImageView]|", options: .init(rawValue: 0), metrics: nil, views: viewsDict))
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-12-[StackView]-12-|", options: .init(rawValue: 0), metrics: nil, views: viewsDict))
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[ImageView(250)]-12-[StackView]-12@250-|", options: .init(rawValue: 0), metrics: nil, views: viewsDict))
+    }
+    
+    func loadArticleImage() {
+        if let imageURLPath = selectedArticle?.urlToImage, let url = URL(string: imageURLPath) {
+            let transformer = SDImageResizingTransformer(size: CGSize(width: Constants.screenWidth, height: Constants.kHeaderViewHeight), scaleMode: .fill)
+            articleImageView.sd_setImage(with: url, placeholderImage: UIImage(named: "emptyPlaceholder"), context: [SDWebImageContextOption.imageTransformer : transformer])
+        }
+        else {
+            articleImageView.image = UIImage(named: "emptyPlaceholder")
+        }
     }
 }

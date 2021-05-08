@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AF853135804362C8EABD633 /* Pods_FortNightly_FortNightlyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82E39A60E54027CEB23E040 /* Pods_FortNightly_FortNightlyUITests.framework */; };
+		4A9DB8086D68EA3CAD2D40EF /* Pods_FortNightlyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA561902FD2BBF49DFC9A7A /* Pods_FortNightlyTests.framework */; };
+		6B49D4FE059566322F103755 /* Pods_FortNightly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5B7236440C50AED02904C2 /* Pods_FortNightly.framework */; };
 		93436FD32644417B0061C8F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93436FD22644417B0061C8F5 /* AppDelegate.swift */; };
 		93436FDA2644417B0061C8F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93436FD82644417B0061C8F5 /* Main.storyboard */; };
 		93436FDC2644417D0061C8F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93436FDB2644417D0061C8F5 /* Assets.xcassets */; };
@@ -82,6 +85,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CBA37513207170FF3871D69 /* Pods-FortNightly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortNightly.debug.xcconfig"; path = "Target Support Files/Pods-FortNightly/Pods-FortNightly.debug.xcconfig"; sourceTree = "<group>"; };
+		40814495D834A3B2DC24122B /* Pods-FortNightly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortNightly.release.xcconfig"; path = "Target Support Files/Pods-FortNightly/Pods-FortNightly.release.xcconfig"; sourceTree = "<group>"; };
+		59CD32E7BAE977A07838CF0B /* Pods-FortNightly-FortNightlyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortNightly-FortNightlyUITests.debug.xcconfig"; path = "Target Support Files/Pods-FortNightly-FortNightlyUITests/Pods-FortNightly-FortNightlyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BA561902FD2BBF49DFC9A7A /* Pods_FortNightlyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortNightlyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A0C8C8C85ABCC5ECBEE8BC3 /* Pods-FortNightly-FortNightlyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortNightly-FortNightlyUITests.release.xcconfig"; path = "Target Support Files/Pods-FortNightly-FortNightlyUITests/Pods-FortNightly-FortNightlyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		93436FCF2644417B0061C8F5 /* FortNightly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortNightly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93436FD22644417B0061C8F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93436FD92644417B0061C8F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,6 +151,11 @@
 		9357499926462ABC00856754 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		935749AB26462AE200856754 /* ArticleDetailViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewRouter.swift; sourceTree = "<group>"; };
 		935749B026462B0300856754 /* ArticleDetailViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewConfigurator.swift; sourceTree = "<group>"; };
+		935749E82646DEAA00856754 /* FortNightly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FortNightly-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB88CC6FF521E7B95F9135E1 /* Pods-FortNightlyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortNightlyTests.debug.xcconfig"; path = "Target Support Files/Pods-FortNightlyTests/Pods-FortNightlyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B82E39A60E54027CEB23E040 /* Pods_FortNightly_FortNightlyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortNightly_FortNightlyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD5B7236440C50AED02904C2 /* Pods_FortNightly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortNightly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65538AD1BF7E58F1732BC7B /* Pods-FortNightlyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortNightlyTests.release.xcconfig"; path = "Target Support Files/Pods-FortNightlyTests/Pods-FortNightlyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B49D4FE059566322F103755 /* Pods_FortNightly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9DB8086D68EA3CAD2D40EF /* Pods_FortNightlyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,12 +179,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF853135804362C8EABD633 /* Pods_FortNightly_FortNightlyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49BD80AD631B91C04FA154CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD5B7236440C50AED02904C2 /* Pods_FortNightly.framework */,
+				B82E39A60E54027CEB23E040 /* Pods_FortNightly_FortNightlyUITests.framework */,
+				5BA561902FD2BBF49DFC9A7A /* Pods_FortNightlyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		93436FC62644417B0061C8F5 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +203,8 @@
 				93436FE82644417D0061C8F5 /* FortNightlyTests */,
 				93436FF32644417D0061C8F5 /* FortNightlyUITests */,
 				93436FD02644417B0061C8F5 /* Products */,
+				E1A7E40B34BF925C9EFFAD15 /* Pods */,
+				49BD80AD631B91C04FA154CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,6 +230,7 @@
 				93436FDD2644417D0061C8F5 /* LaunchScreen.storyboard */,
 				93436FE02644417D0061C8F5 /* Info.plist */,
 				934370082644472F0061C8F5 /* Fonts */,
+				935749E82646DEAA00856754 /* FortNightly-Bridging-Header.h */,
 			);
 			path = FortNightly;
 			sourceTree = "<group>";
@@ -405,6 +434,19 @@
 			path = Client;
 			sourceTree = "<group>";
 		};
+		E1A7E40B34BF925C9EFFAD15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CBA37513207170FF3871D69 /* Pods-FortNightly.debug.xcconfig */,
+				40814495D834A3B2DC24122B /* Pods-FortNightly.release.xcconfig */,
+				59CD32E7BAE977A07838CF0B /* Pods-FortNightly-FortNightlyUITests.debug.xcconfig */,
+				7A0C8C8C85ABCC5ECBEE8BC3 /* Pods-FortNightly-FortNightlyUITests.release.xcconfig */,
+				AB88CC6FF521E7B95F9135E1 /* Pods-FortNightlyTests.debug.xcconfig */,
+				F65538AD1BF7E58F1732BC7B /* Pods-FortNightlyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -412,9 +454,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93436FF92644417D0061C8F5 /* Build configuration list for PBXNativeTarget "FortNightly" */;
 			buildPhases = (
+				96A4B92D3338E3DF2B47C617 /* [CP] Check Pods Manifest.lock */,
 				93436FCB2644417B0061C8F5 /* Sources */,
 				93436FCC2644417B0061C8F5 /* Frameworks */,
 				93436FCD2644417B0061C8F5 /* Resources */,
+				8770FDA3CF50097EA5CA1E4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -429,6 +473,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93436FFC2644417D0061C8F5 /* Build configuration list for PBXNativeTarget "FortNightlyTests" */;
 			buildPhases = (
+				2AFF9AADA52EB09759DB88D9 /* [CP] Check Pods Manifest.lock */,
 				93436FE12644417D0061C8F5 /* Sources */,
 				93436FE22644417D0061C8F5 /* Frameworks */,
 				93436FE32644417D0061C8F5 /* Resources */,
@@ -447,9 +492,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93436FFF2644417D0061C8F5 /* Build configuration list for PBXNativeTarget "FortNightlyUITests" */;
 			buildPhases = (
+				FD492A1430772FCE33828926 /* [CP] Check Pods Manifest.lock */,
 				93436FEC2644417D0061C8F5 /* Sources */,
 				93436FED2644417D0061C8F5 /* Frameworks */,
 				93436FEE2644417D0061C8F5 /* Resources */,
+				4ECB7B18EF66B211A5A78854 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -472,6 +519,7 @@
 				TargetAttributes = {
 					93436FCE2644417B0061C8F5 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 					93436FE42644417D0061C8F5 = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -557,6 +605,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AFF9AADA52EB09759DB88D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FortNightlyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ECB7B18EF66B211A5A78854 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FortNightly-FortNightlyUITests/Pods-FortNightly-FortNightlyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FortNightly-FortNightlyUITests/Pods-FortNightly-FortNightlyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FortNightly-FortNightlyUITests/Pods-FortNightly-FortNightlyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8770FDA3CF50097EA5CA1E4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FortNightly/Pods-FortNightly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FortNightly/Pods-FortNightly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FortNightly/Pods-FortNightly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96A4B92D3338E3DF2B47C617 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FortNightly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD492A1430772FCE33828926 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FortNightly-FortNightlyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93436FCB2644417B0061C8F5 /* Sources */ = {
@@ -757,9 +908,11 @@
 		};
 		93436FFA2644417D0061C8F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CBA37513207170FF3871D69 /* Pods-FortNightly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FortNightly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -768,6 +921,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = chinna.FortNightly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FortNightly/FortNightly-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -775,9 +930,11 @@
 		};
 		93436FFB2644417D0061C8F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40814495D834A3B2DC24122B /* Pods-FortNightly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FortNightly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -786,6 +943,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = chinna.FortNightly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FortNightly/FortNightly-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -793,6 +951,7 @@
 		};
 		93436FFD2644417D0061C8F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB88CC6FF521E7B95F9135E1 /* Pods-FortNightlyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -814,6 +973,7 @@
 		};
 		93436FFE2644417D0061C8F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F65538AD1BF7E58F1732BC7B /* Pods-FortNightlyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -835,6 +995,7 @@
 		};
 		934370002644417D0061C8F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59CD32E7BAE977A07838CF0B /* Pods-FortNightly-FortNightlyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -854,6 +1015,7 @@
 		};
 		934370012644417D0061C8F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A0C8C8C85ABCC5ECBEE8BC3 /* Pods-FortNightly-FortNightlyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
