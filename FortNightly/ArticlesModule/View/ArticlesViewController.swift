@@ -98,10 +98,11 @@ extension ArticlesViewController: UITableViewDataSource, UITableViewDelegate {
         return header
     }
     
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let currentNavigationController = navigationController, let selectedArticle = newsArticles[safe: indexPath.row] else { return }
+        presenter?.didSelectedArticle(article: selectedArticle, navigationController: currentNavigationController)
     }
-    
+
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 1
     }

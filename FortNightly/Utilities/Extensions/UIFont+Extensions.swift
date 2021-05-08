@@ -14,6 +14,10 @@ extension UIFont {
         return UIFont(name: "LibreFranklin-Medium", size: 15.0) ?? UIFont.systemFont(ofSize: 17)
     }
     
+    static func getMediumFont(size: CGFloat = 17.0) -> UIFont {
+        return UIFont(name: "Merriweather-Bold", size: size) ?? UIFont.systemFont(ofSize: 17)
+    }
+    
     static func getBoldFont() -> UIFont {
         return UIFont(name: "Merriweather-Bold", size: 20.0) ?? UIFont.systemFont(ofSize: 17, weight: .bold)
     }

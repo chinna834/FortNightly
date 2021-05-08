@@ -38,4 +38,12 @@ class Utilities {
         
         return imageView
     }
+    
+    func createVerticalStackView(views: [UIView] = [], spacing: CGFloat = 12) -> UIStackView {
+        let stackView = UIStackView(arrangedSubviews: views)
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.spacing = spacing
+        stackView.axis = .vertical
+        return stackView
+    }
 }

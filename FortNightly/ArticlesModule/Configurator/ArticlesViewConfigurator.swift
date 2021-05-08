@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol ArticlesViewToPresenterProtocol: AnyObject {
     var view: ArticlesPresenterToViewProtocol? { get set }
@@ -13,6 +14,7 @@ protocol ArticlesViewToPresenterProtocol: AnyObject {
     var router: ArticlesPresenterToRouterProtocol? { get set }
     func loadNewsArticles(source: String)
     func loadNewsArticles(category:String, country: String)
+    func didSelectedArticle(article: Article, navigationController: UINavigationController)
 }
 
 protocol ArticlesPresenterToViewProtocol: AnyObject {
@@ -33,4 +35,5 @@ protocol ArticlesInteractorToPresenterProtocol: AnyObject {
 
 protocol ArticlesPresenterToRouterProtocol: AnyObject {
     static func createArticlesViewModule() -> ArticlesViewController
+    func showSelectedArticleNews(selectedArticle: Article, navigationController: UINavigationController)
 }

@@ -27,7 +27,7 @@ struct GetNewsArticlesRequest: RequestObject {
         let apiKeyPath = "&apiKey=\(ServerKeys.newsAPIKey)"
         
         path = headlinesPath + apiKeyPath
-        url = URL(string: host + path)        
+        url = URL(string: host + path)
     }
     
     /**
@@ -39,9 +39,7 @@ struct GetNewsArticlesRequest: RequestObject {
         
         path = headlinesPath + apiKeyPath
         url = URL(string: host + path)
-
     }
-    
 }
 
 struct GetNewsArticlesResponse: DecodableResponse {

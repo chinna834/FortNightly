@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ArticlesViewPresenter: ArticlesViewToPresenterProtocol {
     
@@ -19,6 +20,10 @@ class ArticlesViewPresenter: ArticlesViewToPresenterProtocol {
     
     func loadNewsArticles(category: String, country: String) {
         interactor?.getBusinessNewsArticles(byCategory: category, country: country)
+    }
+    
+    func didSelectedArticle(article: Article, navigationController: UINavigationController) {
+        router?.showSelectedArticleNews(selectedArticle: article, navigationController: navigationController)
     }
 }
 

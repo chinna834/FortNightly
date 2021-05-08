@@ -61,11 +61,12 @@ class ArticleTableViewCell: UITableViewCell {
     
     func configureCell(with article: Article) {
         dateLabel.text = "1H"
-        
         articleDescriptionLabel.text = article.title ?? ""
-        
         if let imageURL = article.urlToImage {
             articleImageView.loadImage(from: imageURL)
+        }
+        else {
+            articleImageView.image = UIImage(named: "emptyThumbnail")
         }
     }
 }

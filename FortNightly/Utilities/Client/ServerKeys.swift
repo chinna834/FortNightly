@@ -22,6 +22,7 @@ struct ServerKeys {
     //Sample Category keys
     static let categoryKey = "category"
     static let businessNewsCategoryKey = "business"
+    static let technologyNewsCategoryKey = "technology"
     
     //Sample Country key
     static let countryKey = "country"

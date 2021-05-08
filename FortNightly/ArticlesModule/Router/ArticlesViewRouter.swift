@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ArticlesViewRouter: ArticlesPresenterToRouterProtocol {
     
@@ -25,6 +26,13 @@ class ArticlesViewRouter: ArticlesPresenterToRouterProtocol {
         interactor.presenter = presenter
         
         return newsArticlesViewController
+    }
+    
+    func showSelectedArticleNews(selectedArticle: Article, navigationController: UINavigationController) {
+        let articleDetailViewController = ArticleDetailViewRouter.createArticleDetailModule()
+        articleDetailViewController.selectedArticle = selectedArticle
+        articleDetailViewController.currentCategory = "US - Technology"
+        navigationController.pushViewController(articleDetailViewController, animated: true)
     }
     
 }
