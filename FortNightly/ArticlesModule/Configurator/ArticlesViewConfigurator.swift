@@ -12,6 +12,7 @@ protocol ArticlesViewToPresenterProtocol: AnyObject {
     var interactor: ArticlesPresenterToInteractorProtocol? { get set }
     var router: ArticlesPresenterToRouterProtocol? { get set }
     func loadNewsArticles(source: String)
+    func loadNewsArticles(category:String, country: String)
 }
 
 protocol ArticlesPresenterToViewProtocol: AnyObject {
@@ -22,6 +23,7 @@ protocol ArticlesPresenterToViewProtocol: AnyObject {
 protocol ArticlesPresenterToInteractorProtocol: AnyObject {
     var presenter: ArticlesInteractorToPresenterProtocol? { get set }
     func getNewsArticles(bySource: String)
+    func getBusinessNewsArticles(byCategory: String, country: String)
 }
 
 protocol ArticlesInteractorToPresenterProtocol: AnyObject {

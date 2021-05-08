@@ -16,6 +16,10 @@ class ArticlesViewPresenter: ArticlesViewToPresenterProtocol {
     func loadNewsArticles(source: String) {
         interactor?.getNewsArticles(bySource: source)
     }
+    
+    func loadNewsArticles(category: String, country: String) {
+        interactor?.getBusinessNewsArticles(byCategory: category, country: country)
+    }
 }
 
 extension ArticlesViewPresenter: ArticlesInteractorToPresenterProtocol {

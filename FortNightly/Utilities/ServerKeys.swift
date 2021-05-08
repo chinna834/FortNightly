@@ -20,10 +20,12 @@ struct ServerKeys {
     static let sortByPublishedAtKey = "publishedAt"
     
     //Sample Category keys
+    static let categoryKey = "category"
     static let businessNewsCategoryKey = "business"
     
     //Sample Country key
-    static let countryKey = "us"
+    static let countryKey = "country"
+    static let country_us = "us"
     
     //Sample Domain key
     static let wallStreetJournalKey = "wsj.com"

@@ -19,7 +19,7 @@ extension UIFont {
     }
     
     static func getLightFont() -> UIFont {
-        return UIFont(name: "Merriweather-Light", size: 16) ?? UIFont.systemFont(ofSize: 17, weight: .light)
+        return UIFont(name: "LibreFranklin-Regular", size: 15.0) ?? UIFont.systemFont(ofSize: 17, weight: .light)
     }
     
 }

@@ -12,29 +12,18 @@ class ArticlesViewController: UIViewController, FNCustomNavigation {
     var presenter: ArticlesViewToPresenterProtocol?
     var newsArticles = [Article]()
     
-    var newsArticlesTableView: UITableView = UITableView(frame: CGRect.zero, style: .grouped)
-    
-    private func createSongsTableView() {
-        newsArticlesTableView.translatesAutoresizingMaskIntoConstraints = false
-        newsArticlesTableView.register(ArticleTableViewCell.self, forCellReuseIdentifier: kNewsArticleCellIdentifier)
-        newsArticlesTableView.register(ArticleHeaderView.self, forHeaderFooterViewReuseIdentifier: kArticleHeaderView)
-        newsArticlesTableView.dataSource = self
-        newsArticlesTableView.delegate = self
-        newsArticlesTableView.estimatedRowHeight = 150
-        newsArticlesTableView.estimatedSectionHeaderHeight = Constants.kHeaderViewHeight
-        newsArticlesTableView.rowHeight = UITableView.automaticDimension
-        
-        view.addSubview(newsArticlesTableView)
-    }
-    
-    private func addConstraintsToTableView() {
-        NSLayoutConstraint.activate([
-            newsArticlesTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
-            newsArticlesTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
-            newsArticlesTableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0),
-            newsArticlesTableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0)
-        ])
-    }
+    lazy var newsArticlesTableView: UITableView = {
+        let tableView = UITableView(frame: CGRect.zero, style: .grouped)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.register(ArticleTableViewCell.self, forCellReuseIdentifier: kNewsArticleCellIdentifier)
+        tableView.register(ArticleHeaderView.self, forHeaderFooterViewReuseIdentifier: kArticleHeaderView)
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.estimatedRowHeight = 150
+        tableView.estimatedSectionHeaderHeight = Constants.kHeaderViewHeight
+        tableView.rowHeight = UITableView.automaticDimension
+        return tableView
+    }()
 
     override func loadView() {
         super.loadView()
@@ -47,22 +36,28 @@ class ArticlesViewController: UIViewController, FNCustomNavigation {
         configureNavigationBarWithTextAttributes(title: "Front Page")
         
         //Configure Table View
-        createSongsTableView()
+        view.addSubview(newsArticlesTableView)
         addConstraintsToTableView()
-            
-        //Load News Articles
-        presenter?.loadNewsArticles(source: ServerKeys.techcrunchSourceKey)
+                    
+        //Load News Articles by Category
+        presenter?.loadNewsArticles(category: ServerKeys.businessNewsCategoryKey, country: ServerKeys.country_us)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    private func addConstraintsToTableView() {
+        NSLayoutConstraint.activate([
+            newsArticlesTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
+            newsArticlesTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
+            newsArticlesTableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0),
+            newsArticlesTableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0)
+        ])
     }
 }
 
 extension ArticlesViewController: ArticlesPresenterToViewProtocol {
-    
     func updateArticlesToView(articles: [Article]) {
         newsArticles = articles
         newsArticlesTableView.reloadData()

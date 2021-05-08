@@ -30,7 +30,17 @@ struct GetNewsArticlesRequest: RequestObject {
         url = URL(string: host + path)        
     }
     
-    //Additional APIs can also be implemented
+    /**
+     Construct the URL request to get the top headlines in the business category
+     */
+    init(topHeadlinesByCategory: String, country: String) {
+        let headlinesPath = "\(ServerKeys.topHeadlinesPath)\(ServerKeys.countryKey)=\(country)&\(ServerKeys.categoryKey)=\(topHeadlinesByCategory)"
+        let apiKeyPath = "&apiKey=\(ServerKeys.newsAPIKey)"
+        
+        path = headlinesPath + apiKeyPath
+        url = URL(string: host + path)
+
+    }
     
 }
 
@@ -50,12 +60,11 @@ struct GetNewsArticlesResponse: DecodableResponse {
             do {
                 response.articlesResponse = try JSONDecoder().decode(RawArticlesServerResponse.self, from: data)
             } catch {
-                print(error)
+                response.error = FNError(description: Constants.commonError, responseCode: 0, error: error)
             }
         }
         else {
-            let err = FNError(description: Constants.commonError, responseCode: 0, error: nil)
-            response.error = err
+            response.error = FNError(description: Constants.commonError, responseCode: 0, error: nil)
         }
         
         return response
