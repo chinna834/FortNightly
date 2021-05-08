@@ -10,6 +10,7 @@ import UIKit
 class ArticlesViewController: UIViewController, FNCustomNavigation {
         
     var presenter: ArticlesViewToPresenterProtocol?
+    var previousOffsetValue = false
     
     lazy var datasource: ArticlesViewDataSource = {
         let datasource = ArticlesViewDataSource()
@@ -39,6 +40,7 @@ class ArticlesViewController: UIViewController, FNCustomNavigation {
         //Configure Navigation
         title = "Front Page"
         configureNavigationBarWithTextAttributes(title: "Front Page")
+        addCustomBackButtonToNavigationBar()
         
         //Configure Table View
         view.addSubview(newsArticlesTableView)
@@ -83,9 +85,16 @@ extension ArticlesViewController: ArticlesViewDataSourceToView {
         if value {
             title = ""
             configureNavigationBarWithBrandedImage()
+            if !previousOffsetValue {
+                newsArticlesTableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .none)
+            }
         }
         else {
             configureNavigationBarWithTextAttributes(title: "Front Page")
+            if previousOffsetValue {
+                newsArticlesTableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .none)
+            }
         }
+        previousOffsetValue = value
     }
 }

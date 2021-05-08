@@ -16,6 +16,7 @@ class ArticlesViewDataSource: NSObject, UITableViewDataSource, UITableViewDelega
     
     var newsArticles = [Article]()
     weak var delegate: ArticlesViewDataSourceToView?
+    var offset: CGFloat = 0.0
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return newsArticles.count
@@ -28,7 +29,12 @@ class ArticlesViewDataSource: NSObject, UITableViewDataSource, UITableViewDelega
         
         cell.selectionStyle = .none
         
-        cell.configureCell(with: article)
+        if indexPath.row == 0 {
+            cell.configureCell(with: article, showImage: offset > 0.5)
+        }
+        else {
+            cell.configureCell(with: article)
+        }
         return cell
     }
     
@@ -59,10 +65,9 @@ class ArticlesViewDataSource: NSObject, UITableViewDataSource, UITableViewDelega
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        var offset: CGFloat = 0.0
         let targetHeight = Constants.kHeaderViewHeight + 64 //Overall Navigation Bar Height and Header View Height
         offset = scrollView.contentOffset.y / CGFloat(targetHeight)
-        if offset > 1 {offset = 1}
+        if offset > 1 { offset = 1 }
         if offset > 0.5 {
             delegate?.headerArticleScrolledUp(value: true)
         } else {

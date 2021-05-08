@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ArticleDetailViewRouter: ArticleDetailViewPresenterToRouter {
+class ArticleDetailViewRouter {
     static func createArticleDetailModule() -> ArticleDetailViewController {
         let articleDetailViewController = ArticleDetailViewController()
         return articleDetailViewController

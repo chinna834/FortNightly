@@ -30,7 +30,6 @@ class ArticleTableViewCell: UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
         addComponentsToContentView()
     }
     
@@ -59,9 +58,16 @@ class ArticleTableViewCell: UITableViewCell {
         ])
     }
     
-    func configureCell(with article: Article) {
+    func configureCell(with article: Article, showImage: Bool = true) {
         dateLabel.text = article.publishedAt?.timeAgoDisplay() ?? ""
         articleDescriptionLabel.text = article.title ?? ""
+        guard showImage else {
+            articleImageView.isHidden = true
+            return
+        }
+        
+        articleImageView.isHidden = false
+        
         if let imageURL = article.urlToImage {
             let transformer = SDImageResizingTransformer(size: CGSize(width: 75, height: 75), scaleMode: .fill)
             articleImageView.sd_setImage(with: URL(string: imageURL), placeholderImage: UIImage(named: "emptyThumbnail"), context: [SDWebImageContextOption.imageTransformer : transformer])

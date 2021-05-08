@@ -64,7 +64,6 @@
 		934370CE2644F7F40061C8F5 /* UINavigation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934370CD2644F7F40061C8F5 /* UINavigation+Extensions.swift */; };
 		9357499A26462ABC00856754 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9357499926462ABC00856754 /* ArticleDetailViewController.swift */; };
 		935749AC26462AE200856754 /* ArticleDetailViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749AB26462AE200856754 /* ArticleDetailViewRouter.swift */; };
-		935749B126462B0300856754 /* ArticleDetailViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749B026462B0300856754 /* ArticleDetailViewConfigurator.swift */; };
 		935749F32646E6ED00856754 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749F22646E6ED00856754 /* Date+Extensions.swift */; };
 		935749F82646E89600856754 /* ArticlesViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749F72646E89600856754 /* ArticlesViewDataSource.swift */; };
 /* End PBXBuildFile section */
@@ -152,7 +151,6 @@
 		934370CD2644F7F40061C8F5 /* UINavigation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+Extensions.swift"; sourceTree = "<group>"; };
 		9357499926462ABC00856754 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		935749AB26462AE200856754 /* ArticleDetailViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewRouter.swift; sourceTree = "<group>"; };
-		935749B026462B0300856754 /* ArticleDetailViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewConfigurator.swift; sourceTree = "<group>"; };
 		935749E82646DEAA00856754 /* FortNightly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FortNightly-Bridging-Header.h"; sourceTree = "<group>"; };
 		935749F22646E6ED00856754 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		935749F72646E89600856754 /* ArticlesViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewDataSource.swift; sourceTree = "<group>"; };
@@ -390,7 +388,6 @@
 			children = (
 				935749B526462B0E00856754 /* View */,
 				935749C126462B2200856754 /* Router */,
-				935749C526462B2900856754 /* Configurator */,
 			);
 			path = ArticleDetailModule;
 			sourceTree = "<group>";
@@ -409,14 +406,6 @@
 				935749AB26462AE200856754 /* ArticleDetailViewRouter.swift */,
 			);
 			path = Router;
-			sourceTree = "<group>";
-		};
-		935749C526462B2900856754 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				935749B026462B0300856754 /* ArticleDetailViewConfigurator.swift */,
-			);
-			path = Configurator;
 			sourceTree = "<group>";
 		};
 		935749C92646306100856754 /* Extensions */ = {
@@ -748,7 +737,6 @@
 				935749AC26462AE200856754 /* ArticleDetailViewRouter.swift in Sources */,
 				934370C92644E0D40061C8F5 /* ArticleHeaderView.swift in Sources */,
 				934370CE2644F7F40061C8F5 /* UINavigation+Extensions.swift in Sources */,
-				935749B126462B0300856754 /* ArticleDetailViewConfigurator.swift in Sources */,
 				934370C42644D2380061C8F5 /* UIFont+Extensions.swift in Sources */,
 				93437065264448CE0061C8F5 /* FNError.swift in Sources */,
 				93436FD32644417B0061C8F5 /* AppDelegate.swift in Sources */,
