@@ -66,6 +66,7 @@
 		935749AC26462AE200856754 /* ArticleDetailViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749AB26462AE200856754 /* ArticleDetailViewRouter.swift */; };
 		935749B126462B0300856754 /* ArticleDetailViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749B026462B0300856754 /* ArticleDetailViewConfigurator.swift */; };
 		935749F32646E6ED00856754 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749F22646E6ED00856754 /* Date+Extensions.swift */; };
+		935749F82646E89600856754 /* ArticlesViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749F72646E89600856754 /* ArticlesViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +155,7 @@
 		935749B026462B0300856754 /* ArticleDetailViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewConfigurator.swift; sourceTree = "<group>"; };
 		935749E82646DEAA00856754 /* FortNightly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FortNightly-Bridging-Header.h"; sourceTree = "<group>"; };
 		935749F22646E6ED00856754 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		935749F72646E89600856754 /* ArticlesViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewDataSource.swift; sourceTree = "<group>"; };
 		AB88CC6FF521E7B95F9135E1 /* Pods-FortNightlyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortNightlyTests.debug.xcconfig"; path = "Target Support Files/Pods-FortNightlyTests/Pods-FortNightlyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B82E39A60E54027CEB23E040 /* Pods_FortNightly_FortNightlyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortNightly_FortNightlyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5B7236440C50AED02904C2 /* Pods_FortNightly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortNightly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -322,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				934370832644579B0061C8F5 /* View */,
+				935749FC2646ECAC00856754 /* DataSource */,
 				9343708C2644581B0061C8F5 /* Interactor */,
 				93437087264457AD0061C8F5 /* Presenter */,
 				93437089264457BB0061C8F5 /* Entity */,
@@ -435,6 +438,14 @@
 				9343707D2644507E0061C8F5 /* ServerKeys.swift */,
 			);
 			path = Client;
+			sourceTree = "<group>";
+		};
+		935749FC2646ECAC00856754 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				935749F72646E89600856754 /* ArticlesViewDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		E1A7E40B34BF925C9EFFAD15 /* Pods */ = {
@@ -721,6 +732,7 @@
 				934370B726448AF40061C8F5 /* UIImageView+Extensions.swift in Sources */,
 				9343706F2644491E0061C8F5 /* Utilities.swift in Sources */,
 				934370A026445D530061C8F5 /* ArticlesViewConfigurator.swift in Sources */,
+				935749F82646E89600856754 /* ArticlesViewDataSource.swift in Sources */,
 				934370B226448AD70061C8F5 /* UIImage+Extensions.swift in Sources */,
 				934370A526445D670061C8F5 /* ArticlesViewRouter.swift in Sources */,
 				9343706A264448F60061C8F5 /* Constants.swift in Sources */,

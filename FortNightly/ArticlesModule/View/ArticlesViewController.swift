@@ -10,15 +10,20 @@ import UIKit
 class ArticlesViewController: UIViewController, FNCustomNavigation {
         
     var presenter: ArticlesViewToPresenterProtocol?
-    var newsArticles = [Article]()
+    
+    lazy var datasource: ArticlesViewDataSource = {
+        let datasource = ArticlesViewDataSource()
+        datasource.delegate = self
+        return datasource
+    }()
     
     lazy var newsArticlesTableView: UITableView = {
         let tableView = UITableView(frame: CGRect.zero, style: .grouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(ArticleTableViewCell.self, forCellReuseIdentifier: kNewsArticleCellIdentifier)
         tableView.register(ArticleHeaderView.self, forHeaderFooterViewReuseIdentifier: kArticleHeaderView)
-        tableView.dataSource = self
-        tableView.delegate = self
+        tableView.dataSource = datasource
+        tableView.delegate = datasource
         tableView.estimatedRowHeight = 150
         tableView.estimatedSectionHeaderHeight = Constants.kHeaderViewHeight
         tableView.rowHeight = UITableView.automaticDimension
@@ -59,7 +64,7 @@ class ArticlesViewController: UIViewController, FNCustomNavigation {
 
 extension ArticlesViewController: ArticlesPresenterToViewProtocol {
     func updateArticlesToView(articles: [Article]) {
-        newsArticles = articles
+        datasource.newsArticles = articles
         newsArticlesTableView.reloadData()
     }
     
@@ -68,67 +73,18 @@ extension ArticlesViewController: ArticlesPresenterToViewProtocol {
     }
 }
 
-extension ArticlesViewController: UITableViewDataSource, UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newsArticles.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: kNewsArticleCellIdentifier) as? ArticleTableViewCell,
-              let article = newsArticles[safe: indexPath.row]
-              else { return UITableViewCell() }
-        
-        cell.selectionStyle = .none
-        
-        cell.configureCell(with: article)
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return UITableView.automaticDimension
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: kArticleHeaderView) as? ArticleHeaderView
-        let firstIndexpath = IndexPath(row: 0, section: section)
-        if let firstArticle = newsArticles[safe: firstIndexpath.row] {
-            header?.configureArticleImage(with: firstArticle.urlToImage)
-        }
-        return header
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let currentNavigationController = navigationController, let selectedArticle = newsArticles[safe: indexPath.row] else { return }
+extension ArticlesViewController: ArticlesViewDataSourceToView {
+    func didSelectedArticle(selectedArticle: Article) {
+        guard let currentNavigationController = navigationController else { return }
         presenter?.didSelectedArticle(article: selectedArticle, navigationController: currentNavigationController)
     }
-
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 1
-    }
     
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return UITableViewHeaderFooterView()
-    }
-}
-
-/**
- Determing the Scroll and Update the Navigation title Accordingly
- */
-extension ArticlesViewController: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        var offset: CGFloat = 0.0
-        
-        let targetHeight = Constants.kHeaderViewHeight + 64 //Overall Navigation Bar Height and Header View Height
-        offset = scrollView.contentOffset.y / CGFloat(targetHeight)
-
-        if offset > 1 {offset = 1}
-        
-        if offset > 0.5 {
+    func headerArticleScrolledUp(value: Bool) {
+        if value {
             title = ""
             configureNavigationBarWithBrandedImage()
-        } else {
+        }
+        else {
             configureNavigationBarWithTextAttributes(title: "Front Page")
         }
     }
