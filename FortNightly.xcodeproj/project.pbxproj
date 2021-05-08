@@ -66,6 +66,10 @@
 		935749AC26462AE200856754 /* ArticleDetailViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749AB26462AE200856754 /* ArticleDetailViewRouter.swift */; };
 		935749F32646E6ED00856754 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749F22646E6ED00856754 /* Date+Extensions.swift */; };
 		935749F82646E89600856754 /* ArticlesViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749F72646E89600856754 /* ArticlesViewDataSource.swift */; };
+		93574A1026472B9B00856754 /* Articles.json in Resources */ = {isa = PBXBuildFile; fileRef = 93574A0F26472B9B00856754 /* Articles.json */; };
+		93574A1626472CFD00856754 /* UnitTestUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93574A1526472CFD00856754 /* UnitTestUtility.swift */; };
+		93574A1E26472DF200856754 /* GetArticlesRequestResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93574A1D26472DF200856754 /* GetArticlesRequestResponseTests.swift */; };
+		93574A23264738CF00856754 /* ArticleModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93574A22264738CF00856754 /* ArticleModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +158,10 @@
 		935749E82646DEAA00856754 /* FortNightly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FortNightly-Bridging-Header.h"; sourceTree = "<group>"; };
 		935749F22646E6ED00856754 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		935749F72646E89600856754 /* ArticlesViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewDataSource.swift; sourceTree = "<group>"; };
+		93574A0F26472B9B00856754 /* Articles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Articles.json; sourceTree = "<group>"; };
+		93574A1526472CFD00856754 /* UnitTestUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestUtility.swift; sourceTree = "<group>"; };
+		93574A1D26472DF200856754 /* GetArticlesRequestResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesRequestResponseTests.swift; sourceTree = "<group>"; };
+		93574A22264738CF00856754 /* ArticleModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModelTests.swift; sourceTree = "<group>"; };
 		AB88CC6FF521E7B95F9135E1 /* Pods-FortNightlyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortNightlyTests.debug.xcconfig"; path = "Target Support Files/Pods-FortNightlyTests/Pods-FortNightlyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B82E39A60E54027CEB23E040 /* Pods_FortNightly_FortNightlyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortNightly_FortNightlyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5B7236440C50AED02904C2 /* Pods_FortNightly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortNightly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,7 +248,11 @@
 		93436FE82644417D0061C8F5 /* FortNightlyTests */ = {
 			isa = PBXGroup;
 			children = (
+				93574A1426472CEB00856754 /* Helpers */,
+				93574A0326472B6A00856754 /* Resources */,
 				93436FE92644417D0061C8F5 /* FortNightlyTests.swift */,
+				93574A1D26472DF200856754 /* GetArticlesRequestResponseTests.swift */,
+				93574A22264738CF00856754 /* ArticleModelTests.swift */,
 				93436FEB2644417D0061C8F5 /* Info.plist */,
 			);
 			path = FortNightlyTests;
@@ -437,6 +449,22 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		93574A0326472B6A00856754 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93574A0F26472B9B00856754 /* Articles.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		93574A1426472CEB00856754 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				93574A1526472CFD00856754 /* UnitTestUtility.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E1A7E40B34BF925C9EFFAD15 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -597,6 +625,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93574A1026472B9B00856754 /* Articles.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -747,6 +776,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93574A1626472CFD00856754 /* UnitTestUtility.swift in Sources */,
+				93574A1E26472DF200856754 /* GetArticlesRequestResponseTests.swift in Sources */,
+				93574A23264738CF00856754 /* ArticleModelTests.swift in Sources */,
 				93436FEA2644417D0061C8F5 /* FortNightlyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
