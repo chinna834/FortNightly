@@ -12,6 +12,10 @@ class ArticlesViewController: UIViewController, FNCustomNavigation {
     var presenter: ArticlesViewToPresenterProtocol?
     var previousOffsetValue = false
     
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var loadingViewTitleLabel: UILabel!
+    @IBOutlet weak var loadingViewStatusLabel: UILabel!
+    
     lazy var datasource: ArticlesViewDataSource = {
         let datasource = ArticlesViewDataSource()
         datasource.delegate = self
@@ -30,9 +34,9 @@ class ArticlesViewController: UIViewController, FNCustomNavigation {
         tableView.rowHeight = UITableView.automaticDimension
         return tableView
     }()
-
-    override func loadView() {
-        super.loadView()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         //Update View Color
         view.backgroundColor = .white
@@ -43,15 +47,12 @@ class ArticlesViewController: UIViewController, FNCustomNavigation {
         addCustomBackButtonToNavigationBar()
         
         //Configure Table View
+        newsArticlesTableView.isHidden = true
         view.addSubview(newsArticlesTableView)
         addConstraintsToTableView()
                     
         //Load News Articles by Category
         presenter?.loadNewsArticles(category: ServerKeys.businessNewsCategoryKey, country: ServerKeys.country_us)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
     
     private func addConstraintsToTableView() {
@@ -66,11 +67,17 @@ class ArticlesViewController: UIViewController, FNCustomNavigation {
 
 extension ArticlesViewController: ArticlesPresenterToViewProtocol {
     func updateArticlesToView(articles: [Article]) {
+        loadingView.isHidden = true
+        newsArticlesTableView.isHidden = false
         datasource.newsArticles = articles
         newsArticlesTableView.reloadData()
     }
     
     func failedToGetArticles() {
+        newsArticlesTableView.isHidden = true
+        loadingView.isHidden = false
+        loadingViewTitleLabel.text = "Error!"
+        loadingViewStatusLabel.text = "Unable to fetch Articles"
         print("Unable to fetch Articles")
     }
 }

@@ -8,6 +8,14 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LibreFranklin-Bold.ttf">
+            <string>LibreFranklin-Bold</string>
+        </array>
+        <array key="Merriweather-Regular.ttf">
+            <string>Merriweather-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Articles View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,13 +24,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZI8-tS-1qC">
+                                <rect key="frame" x="69.5" y="148" width="275" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaT-2h-YVX">
+                                        <rect key="frame" x="79.5" y="16" width="116" height="25"/>
+                                        <fontDescription key="fontDescription" name="LibreFranklin-Bold" family="Libre Franklin" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fetching news takes some time." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOU-Qy-P46">
+                                        <rect key="frame" x="4" y="49" width="267" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="j1Z-fH-f5E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Merriweather-Regular" family="Merriweather" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="EOU-Qy-P46" secondAttribute="trailing" constant="4" id="G7N-MN-ahQ"/>
+                                    <constraint firstItem="EOU-Qy-P46" firstAttribute="top" secondItem="KaT-2h-YVX" secondAttribute="bottom" constant="8" symbolic="YES" id="I0b-Pd-G4f"/>
+                                    <constraint firstAttribute="height" constant="96" id="XfD-S0-JeY"/>
+                                    <constraint firstItem="KaT-2h-YVX" firstAttribute="top" secondItem="ZI8-tS-1qC" secondAttribute="top" constant="16" id="aYn-gk-hXw"/>
+                                    <constraint firstItem="EOU-Qy-P46" firstAttribute="leading" secondItem="ZI8-tS-1qC" secondAttribute="leading" constant="4" id="d0G-hW-hlL"/>
+                                    <constraint firstItem="KaT-2h-YVX" firstAttribute="centerX" secondItem="ZI8-tS-1qC" secondAttribute="centerX" id="qUg-gG-Byv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZI8-tS-1qC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="Bu2-Lh-dMN"/>
+                            <constraint firstItem="ZI8-tS-1qC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ylo-cj-lkL"/>
+                        </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="loadingView" destination="ZI8-tS-1qC" id="jxe-Kp-TOF"/>
+                        <outlet property="loadingViewStatusLabel" destination="EOU-Qy-P46" id="1Va-VP-ZCw"/>
+                        <outlet property="loadingViewTitleLabel" destination="KaT-2h-YVX" id="BBQ-Fr-pRA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>

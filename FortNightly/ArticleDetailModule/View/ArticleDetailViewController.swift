@@ -41,14 +41,16 @@ class ArticleDetailViewController: UIViewController {
         let stackView = Utilities().createVerticalStackView(views: [articleCategoryLabel, articleTitleLabel, articleContentLabel], spacing: 12)
         return stackView
     }()
+    
+    override func loadView() {
+        super.loadView()
+        view.backgroundColor = .white
+        hookComponentsToView()
+        loadArticleImage()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .white
-        hookComponentsToView()
-        
-        loadArticleImage()
     }
 
     private func hookComponentsToView() {

@@ -12,7 +12,10 @@ class ArticlesViewRouter: ArticlesPresenterToRouterProtocol {
     
     static func createArticlesViewModule() -> ArticlesViewController {
        
-        let newsArticlesViewController = ArticlesViewController()
+        let mainStoryboard = Utilities().getStoryboard(storyboardName: "Main")
+        guard let newsArticlesViewController = mainStoryboard.instantiateViewController(identifier: "ArticlesVC") as? ArticlesViewController else {
+            return ArticlesViewController()
+        }
         let presenter: ArticlesViewToPresenterProtocol & ArticlesInteractorToPresenterProtocol = ArticlesViewPresenter()
         let interactor: ArticlesPresenterToInteractorProtocol = ArticlesViewInteractor()
         let router: ArticlesPresenterToRouterProtocol = ArticlesViewRouter()
