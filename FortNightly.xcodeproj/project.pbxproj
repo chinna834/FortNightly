@@ -65,6 +65,7 @@
 		9357499A26462ABC00856754 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9357499926462ABC00856754 /* ArticleDetailViewController.swift */; };
 		935749AC26462AE200856754 /* ArticleDetailViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749AB26462AE200856754 /* ArticleDetailViewRouter.swift */; };
 		935749B126462B0300856754 /* ArticleDetailViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749B026462B0300856754 /* ArticleDetailViewConfigurator.swift */; };
+		935749F32646E6ED00856754 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749F22646E6ED00856754 /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +153,7 @@
 		935749AB26462AE200856754 /* ArticleDetailViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewRouter.swift; sourceTree = "<group>"; };
 		935749B026462B0300856754 /* ArticleDetailViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewConfigurator.swift; sourceTree = "<group>"; };
 		935749E82646DEAA00856754 /* FortNightly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FortNightly-Bridging-Header.h"; sourceTree = "<group>"; };
+		935749F22646E6ED00856754 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		AB88CC6FF521E7B95F9135E1 /* Pods-FortNightlyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortNightlyTests.debug.xcconfig"; path = "Target Support Files/Pods-FortNightlyTests/Pods-FortNightlyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B82E39A60E54027CEB23E040 /* Pods_FortNightly_FortNightlyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortNightly_FortNightlyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5B7236440C50AED02904C2 /* Pods_FortNightly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortNightly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -421,6 +423,7 @@
 				934370B126448AD70061C8F5 /* UIImage+Extensions.swift */,
 				934370C32644D2380061C8F5 /* UIFont+Extensions.swift */,
 				934370CD2644F7F40061C8F5 /* UINavigation+Extensions.swift */,
+				935749F22646E6ED00856754 /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -724,6 +727,7 @@
 				9343709B26445C5F0061C8F5 /* GetArticlesRequestResponse.swift in Sources */,
 				9343707E2644507E0061C8F5 /* ServerKeys.swift in Sources */,
 				93437060264448A20061C8F5 /* NetworkManager.swift in Sources */,
+				935749F32646E6ED00856754 /* Date+Extensions.swift in Sources */,
 				934370962644591B0061C8F5 /* ArticlesViewPresenter.swift in Sources */,
 				9343708E264459110061C8F5 /* ArticlesViewInteractor.swift in Sources */,
 				934370BC2644C7940061C8F5 /* ArticleTableViewCell.swift in Sources */,

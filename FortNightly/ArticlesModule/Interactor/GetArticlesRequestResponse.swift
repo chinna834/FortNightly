@@ -56,7 +56,9 @@ struct GetNewsArticlesResponse: DecodableResponse {
         
         if success {
             do {
-                response.articlesResponse = try JSONDecoder().decode(RawArticlesServerResponse.self, from: data)
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .formatted(Utilities().getDateFormatter())
+                response.articlesResponse = try decoder.decode(RawArticlesServerResponse.self, from: data)
             } catch {
                 response.error = FNError(description: Constants.commonError, responseCode: 0, error: error)
             }

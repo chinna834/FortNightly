@@ -60,7 +60,7 @@ class ArticleTableViewCell: UITableViewCell {
     }
     
     func configureCell(with article: Article) {
-        dateLabel.text = "1H"
+        dateLabel.text = article.publishedAt?.timeAgoDisplay() ?? ""
         articleDescriptionLabel.text = article.title ?? ""
         if let imageURL = article.urlToImage {
             let transformer = SDImageResizingTransformer(size: CGSize(width: 75, height: 75), scaleMode: .fill)
